@@ -1,7 +1,28 @@
 aid: rippl
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rippl.png
 name: Rippl
-description: Rippl is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rippl (Rippl Care, now part of Harbor Health) is a value-based,
+  technology-enabled dementia and senior behavioral-health care provider backed
+  by General Catalyst. It delivers specialized dementia care including medication
+  assessments, personalized care plans, counseling, community-resource
+  connections, care-navigation check-ins, safety guidance, and caregiver
+  support, partnering with health systems and payors to lower total cost of care
+  and improve outcomes for older adults. Rippl operates as a clinical
+  care-delivery organization rather than an API-first software vendor: it
+  publishes no public developer API, SDK, or documentation surface, and its
+  patient portal is provided through an athenahealth integration.
 url: https://raw.githubusercontent.com/api-evangelist/rippl/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Dementia Care
+- Behavioral Health
+- Value-Based Care
+- Senior Care
+- Caregiver Support
+- Telehealth
+common:
+- type: DomainSecurity
+  url: security/rippl-domain-security.yml
+- type: Website
+  url: https://ripplcare.com/
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
